@@ -1,0 +1,18 @@
+from HotDrink import*
+from HotDrinkMachine import*
+
+hot_drink1 = Hot_drink("latte", 400, 75)
+hot_drink2 = Hot_drink("capuchino", 300, 77)
+hot_drink3 = Hot_drink("tea", 300, 85)
+hot_drink4 = Hot_drink("green tea", 300, 85)
+
+list_drinks = HotDrinkMachine()
+
+list_drinks.add_drink(hot_drink1)
+list_drinks.add_drink(hot_drink2)
+list_drinks.add_drink(hot_drink3)
+list_drinks.add_drink(hot_drink4)
+list_drinks.print()
+print("--------------------------------")
+list_drinks.sort_drink(Hot_drink)
+list_drinks.print()
