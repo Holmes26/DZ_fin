@@ -1,0 +1,21 @@
+from HotDrink import Hot_drink
+
+
+class HotDrinkMachine():
+    def __init__(self):
+        self._list = []
+
+    def add_drink(self, Hot_drink):
+        self._list.append(Hot_drink)
+        
+    def sort_drink(self, Hot_drink, temperature):
+        
+        sort = []
+        for drink in self._list:
+            if temperature > 80:
+                sort.append(drink)
+                return sort
+
+    def print(self):
+        for el in self._list:
+            print(str(el))
